@@ -1,0 +1,29 @@
+name: Testing Build
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  Test Build Application:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+        node_version:
+          - lts/*
+        architecture:
+          - x64
+    name: Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node_version }}
+          architecture: ${{ matrix.architecture }}
+          cache: yarn
+      - run: yarn install
+      - run: yarn build
+      # - run: yarn test
