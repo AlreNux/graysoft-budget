@@ -1,7 +1,9 @@
 # GraySoft Budget Application README
-
 # Данный проект является закрытым одной команды разработчиков, в которой я принимаю участие,как один из двух фронтов.
-# Поэтому мне разрешили показать только часть кода. Сборка и всё остальное - делал я.
+# Поэтому мне разрешили показать только часть кода. Эту часть проекта делал я один.
+![gr1](https://user-images.githubusercontent.com/81815016/131212769-e56d5084-a83d-462d-b92b-dec204528e19.png)
+![gr3](https://user-images.githubusercontent.com/81815016/131212767-f57fa9a0-16f9-416a-9007-271d1682d8c5.png)
+![gr4](https://user-images.githubusercontent.com/81815016/131212768-2563ed50-eb78-4ace-a417-dbf370f1b26a.png)
 
 ## [Установка и настройка](docs\install-info.md)
 
